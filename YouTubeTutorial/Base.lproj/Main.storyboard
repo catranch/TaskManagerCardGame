@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SIngleCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bT-2X-a1L">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="177" y="414" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="playRoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1dg-z9-VXx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tasks To Do" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ImF-Xk-uzT">
+                                <rect key="frame" x="218" y="100" width="165" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="50" y="100" width="700" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apr-8d-dXY">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6O-x4-EVO">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="cardback" highlightedImage="card2" translatesAutoresizingMaskIntoConstraints="NO" id="9eB-Y7-mtS" userLabel="SecondCard">
+                                <rect key="frame" x="460" y="220" width="120" height="160"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="lOf-pe-Uug"/>
+                                    <constraint firstAttribute="width" constant="120" id="s78-3I-XHK"/>
+                                </constraints>
+                                <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="240" y="320" width="120" height="160"/>
+                                </variation>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="234" y="220" width="120" height="160"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="240" y="320" width="120" height="160"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="apr-8d-dXY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="4Zf-ee-h7C"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5bT-2X-a1L" secondAttribute="bottom" constant="50" id="5GI-lt-y85"/>
+                            <constraint firstItem="5bT-2X-a1L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5yw-5G-2UG"/>
+                            <constraint firstItem="ImF-Xk-uzT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="EAM-en-wNm"/>
+                            <constraint firstItem="ImF-Xk-uzT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LSE-7Q-gTT"/>
+                            <constraint firstItem="ImF-Xk-uzT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ohe-Nz-htO"/>
+                            <constraint firstItem="Q6O-x4-EVO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SKr-Lg-82T"/>
+                            <constraint firstItem="9eB-Y7-mtS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TxV-HK-unc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="apr-8d-dXY" secondAttribute="bottom" constant="20" id="rOX-2x-qKX"/>
+                            <constraint firstItem="Q6O-x4-EVO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="115" id="tk3-d1-j6s"/>
+                            <constraint firstItem="9eB-Y7-mtS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ySQ-nt-hK4"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="5bT-2X-a1L"/>
+                                <exclude reference="apr-8d-dXY"/>
+                                <exclude reference="Q6O-x4-EVO"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="5yw-5G-2UG"/>
+                                <exclude reference="SKr-Lg-82T"/>
+                                <exclude reference="tk3-d1-j6s"/>
+                                <exclude reference="4Zf-ee-h7C"/>
+                                <exclude reference="Ohe-Nz-htO"/>
+                                <exclude reference="TxV-HK-unc"/>
+                                <exclude reference="ySQ-nt-hK4"/>
+                                <exclude reference="5GI-lt-y85"/>
+                                <exclude reference="rOX-2x-qKX"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="5bT-2X-a1L"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="5yw-5G-2UG"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="apr-8d-dXY"/>
+                                <include reference="Q6O-x4-EVO"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="SKr-Lg-82T"/>
+                                <include reference="tk3-d1-j6s"/>
+                                <include reference="4Zf-ee-h7C"/>
+                                <include reference="Ohe-Nz-htO"/>
+                                <include reference="TxV-HK-unc"/>
+                                <include reference="ySQ-nt-hK4"/>
+                                <include reference="5GI-lt-y85"/>
+                                <include reference="rOX-2x-qKX"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="TaskCounterLabel" destination="Q6O-x4-EVO" id="FNX-wr-C03"/>
+                        <outlet property="newYearsRez" destination="ImF-Xk-uzT" id="LR2-hZ-hyZ"/>
+                        <outlet property="playRoundButton" destination="5bT-2X-a1L" id="G2Q-vP-geO"/>
+                        <outlet property="playerScoreLabel" destination="apr-8d-dXY" id="xee-HE-J8F"/>
+                        <outlet property="secondCardImageView" destination="9eB-Y7-mtS" id="TxL-w0-iAd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="209" y="-163"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="card2" width="76" height="76"/>
+        <image name="cardback" width="76" height="76"/>
+    </resources>
+</document>
