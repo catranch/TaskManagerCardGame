@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FC5633F36C73F06E1A8364083891B57FFE8EAB93",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5FB0A157296CCE13E1F4C9C5FDC27D212D93529B" : 0,
+    "FC5633F36C73F06E1A8364083891B57FFE8EAB93" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "15C2768E-160E-4723-8ABA-94870AC278C6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5FB0A157296CCE13E1F4C9C5FDC27D212D93529B" : "",
+    "FC5633F36C73F06E1A8364083891B57FFE8EAB93" : "TutorialNewButton\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SIngleCard",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SIngleCard.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/catranch\/Task-Manager-Game-Mobile-App.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5FB0A157296CCE13E1F4C9C5FDC27D212D93529B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/catranch\/TaskManagerCardGame.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FC5633F36C73F06E1A8364083891B57FFE8EAB93"
+    }
+  ]
+}

@@ -85,7 +85,7 @@ class ViewController: UIViewController {
     var cardNamesArray:[String]=["cardback","card1","card2","card3","card4","card5","card6","card7","card8","card9","card10","card11","card12","card13","card14","card15","card16","card17","card18","card19","card20","card21","card22","card23","card24","card25","card26"]
     
     var taskOnlyTextArray: //start the day then hour chunks
-        [String]=["Ready?","30 min on goals","30 min workout","30 min on some errands","30 min on making money","30 min respond to email","30 min on keeping track of money","30 min on relationships"]
+        [String]=["Ready?","5 min on goals for the day","30 min workout","30 min on errands","30 min on making money","30 min respond to email","30 min on keeping track of money","30 min on relationships"]
 
     
     var myAudioPlayer = AVAudioPlayer()
@@ -127,7 +127,13 @@ class ViewController: UIViewController {
             
             self.playerScoreLabel.text = String(self.playerScore)
 
+            if taskNumber == 1 {
+                self.taskTimer = 300
+            }
+            else {
             self.taskTimer = 1800 //3600 is one hour
+            }
+            
             if timerRunning == false {
 
             timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector:("Counting"), userInfo: nil, repeats: true)
